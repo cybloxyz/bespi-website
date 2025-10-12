@@ -4,26 +4,38 @@
     let title = "Real12 Magazine";
 </script>
 
-<main style="background-image: url({Titled});">
+<main style="background-image: url({Titled}); background-color: #ebe3c6;">
   <button class="w-48 h-16 rounded-2xl btn mt-60% hover:scale-105 transition-transform duration-200">here!</button>
-    <div class="bg-transparent z-1000">
-         
-  </div>
 </main>
-
-
 
 <style>
 main {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* vertikal */
+    align-items: center;     /* horizontal */
+    flex-direction: column;
     width: 100%;
-    height: 100vh;           
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 50vh; /* tombol muncul sekitar tengah layar */
+    background-color: #ebe3c6; /* menutupi sisa area */
+    padding-top: 0; /* hapus padding besar */
 }
+
+
+main::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh; /* atau height lebih besar sesuai kebutuhan */
+    background-color: #ebe3c6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* biar di belakang konten */
+}
+
 
 /* tombol */
 .btn {
