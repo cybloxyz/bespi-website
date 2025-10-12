@@ -1,1 +1,1 @@
-# real12
+# real12 Magazine
