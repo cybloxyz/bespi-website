@@ -1,11 +1,38 @@
 <script lang="ts">
+    import { goto } from '$app/navigation';
+
+    function Riddle() {
+      goto('/riddle');
+    }
+    function Games() {
+      goto('/games');
+    }
+    function Create() {
+      goto('/create');
+    }
+    function Our() {
+      goto('/extra');
+    }
+    function Comic() {
+      goto('/comic');
+    }
     import Titled from "../lib/assets/real123.png";
-    import Real from "../lib/assets/cover.jpeg";
-    let title = "Real12 Magazine";
+    import Z from "../lib/assets/z.jpg";
+    import rid from "../lib/assets/riddle.jpg"
 </script>
 
 <main style="background-image: url({Titled}); background-color: #ebe3c6;">
-  <button class="w-48 h-16 rounded-2xl btn mt-60% hover:scale-105 transition-transform duration-200">here!</button>
+  <div class="bg-red-900 h-text w-text mt-56 py-2 px-2 mx-4 lg:py-8 md:py-8 sm:py-8 lg:px-24 md:px-24 sm:px-14 rounded-full">
+    <h1 class="lg:text-3xl md:text-2xl sm:text-lg text-xs font-bold text-center text-white drop-shadow-2xl">ANSWER FOR REAL 12 BRAIN CHALLENGES!</h1>
+  </div>
+  <div class="flex gap-4 items-center flex-wrap justify-center mt-8">
+    <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200" onclick={Riddle}>Riddle</button>
+    <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200" onclick={Games}>Games</button>
+    <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200">here!</button>
+    <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200">here!</button>
+  </div>
+  <h1 class="text-center mt-6 lg:text-xl md:text-lg sm:text-sm text-xs">click each button to check your answer!</h1>
+  <button class="mt-8 w-96 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200">extra part!</button>
 </main>
 
 <style>
@@ -55,6 +82,7 @@ main::after {
     box-shadow: 0 14px 20px rgba(0, 0, 0, 0.35);
 }
 
+
 @keyframes wiggle {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(5deg); }
@@ -91,7 +119,7 @@ main::after {
     }
 
     .btn {
-        width: 40vw;              /* tombol menyesuaikan layar */
+        width: 50vw;              /* tombol menyesuaikan layar */
         font-size: 0.9rem;
         padding: 10px 20px;
     }
