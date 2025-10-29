@@ -17,8 +17,7 @@
       goto('/comic');
     }
     import Titled from "../lib/assets/real123.png";
-    import Z from "../lib/assets/z.jpg";
-    import rid from "../lib/assets/riddle.jpg"
+	
 </script>
 
 <main style="background-image: url({Titled}); background-color: #ebe3c6;">
@@ -28,8 +27,8 @@
   <div class="flex gap-4 items-center flex-wrap justify-center mt-8">
     <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200" onclick={Riddle}>Riddle</button>
     <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200" onclick={Games}>Games</button>
-    <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200">here!</button>
-    <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200">here!</button>
+   
+    <button class="w-48 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200" onclick={Comic}>Comic!</button>
   </div>
   <h1 class="text-center mt-6 lg:text-xl md:text-lg sm:text-sm text-xs">click each button to check your answer!</h1>
   <button class="mt-8 w-96 h-16 rounded-2xl btn hover:scale-105 transition-transform duration-200">extra part!</button>

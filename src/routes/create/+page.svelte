@@ -1,8 +1,8 @@
 <script lang="ts">
-  import rid from "../../lib/assets/z.jpg"
+  import rid from "../../lib/assets/create.jpg"
 </script>
 
-<main style="background-image: url({rid}); background-color: #689E4B;">
+<main style="background-image: url({rid}); background-color: #ebe3c6;">
 
     <!-- tambahin konten biar bisa discroll -->
     <div style="height: 250vh;"></div>
@@ -22,7 +22,7 @@ main {
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll; /* ini kuncinya — background ikut scroll */
-  background-color: #689E4B; /* nutup area bawah */
+  background-color: #ebe3c6; /* nutup area bawah */
 }
 
 .content {

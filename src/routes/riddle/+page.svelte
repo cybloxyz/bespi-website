@@ -2,7 +2,7 @@
   import rid from "../../lib/assets/riddle.jpg"
 </script>
 
-<main style="background-image: url({rid}); background-color: #ebe3c6;">
+<main style="background-image: url({rid}); background-color: #041322;">
 
     <!-- tambahin konten biar bisa discroll -->
     <div style="height: 250vh;"></div>
