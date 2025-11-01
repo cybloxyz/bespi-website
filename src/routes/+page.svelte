@@ -16,7 +16,7 @@
     function Comic() {
       goto('/comic');
     }
-    import Titled from "../lib/assets/real123.png";
+    import Titled from "../lib/assets/real123.webp";
 	
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import rid from "../../lib/assets/create.jpg"
+  import rid from "../../lib/assets/create.webp"
 </script>
 
 <main style="background-image: url({rid}); background-color: #ebe3c6;">

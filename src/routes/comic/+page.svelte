@@ -1,5 +1,5 @@
 <script lang="ts">
-  import rid from "../../lib/assets/komik.jpg"
+  import rid from "../../lib/assets/komik.webp"
 </script>
 
 <main style="background-image: url({rid}); background-color: #0B1108;">
